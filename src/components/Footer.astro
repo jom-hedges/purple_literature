@@ -1,0 +1,36 @@
+---
+import { Icon } from 'astro-icon/components';
+const today = new Date();
+---
+
+<footer>
+	&copy; {today.getFullYear()} Osmanthus. All rights reserved.
+	<div class="social-links">
+		<a href="https://twitter.com/osmanthustxt"><Icon name="mdi:twitter" /></a>
+	</div>
+</footer>
+
+<style>
+	footer {
+    font-family: 'Open-Sans', sans-serif;
+		padding: 2em 1em 6em 1em;
+		background: #FFFFFF;
+		color: #222222;
+		text-align: center;
+		border-top: 1px solid #EDEDED;
+	}
+	.social-links {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+		margin-top: 1em;
+	}
+	.social-links a {
+		text-decoration: none;
+		color: #222222;
+	}
+	.social-links a:hover {
+		color: #BBCDE5;
+	}
+</style>
+

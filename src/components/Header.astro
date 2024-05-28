@@ -1,10 +1,74 @@
 ---
-import Hamburger from './Hamburger.astro';
-import Navigation from './Navigation.astro';
+import HeaderLink from './HeaderLink.astro';
 ---
-<header>
-  <nav>
-    <Hamburger />
-    <Navigation />
-  </nav>
-</header>
+<nav>
+	<div class="header-nav">
+		<div class="navbar-left">
+			<div class="navbar-logo">
+				<a href="/">
+					<img src="/osmanthus-logo.png" alt="osmanthus">
+				</a>
+			</div>
+		</div>
+		<div class="links">
+			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/interviews">Interviews</HeaderLink>
+      <HeaderLink href="/blog">Suites</HeaderLink>
+			<HeaderLink href="/publications">Publications</HeaderLink>
+			<HeaderLink href="/submit">Submit</HeaderLink>
+      <HeaderLink href="https://earshrub.substack.com">Earshrub</HeaderLink>
+    </div>
+	</div>	
+</nav>
+<style>
+	nav {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: nowrap;
+		padding: 0.25em 2rem 0.25rem 2rem;
+		background-color: #FFFFFF;
+		border-bottom: 1px solid #EDEDED;
+	}
+	.header-nav {
+		display: flex;
+		height: 5em;
+		
+	}
+	.navbar-logo {
+		display: flex;
+	}
+	img {
+		display: flex;
+		height: auto;
+		width: 3.125ch;
+		padding: 0.75em 1.25em;
+	}	
+	.links {
+		display: flex;
+		top: 5em;
+		text-align: center;
+		color: #222222;
+    font-family: sans-serif;
+		padding: 10px 0;
+		text-decoration: none;
+		font-weight: normal;
+		text-transform: uppercase;
+		text-wrap: no-wrap;
+	}
+	.links a {
+		padding: 26px 46px;
+		font-size: 1.2rem;
+		flex-wrap: no-wrap;
+		max-width: 500px;
+		text-decoration: none;
+		
+	}
+	.search-input {
+		display: flex;
+		padding: 8px 12px;
+		margin: auto;
+		width: fit-content;
+		text-align: right;
+	}
+	
+</style>

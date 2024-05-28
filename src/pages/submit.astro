@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+import Card from '../components/Card.astro';
+---
+<Layout
+    title='Submission Guidelines'
+    description='Guidelines for submissions to Osmanthus'
+    pubDate={new Date()}
+>
+    <ul role="list" class="link-card-grid">
+      <Card 
+        title="For online suites"
+        body="Our editors would like to read poetry, short fiction, visual novels, games. Consider ~6 page maximum, but length is relative to the work. Send submissions to editors@osmanthus.tv with a subject line that includes SWEETZZ. In your email, include a brief bio, anything you'd like to plug, and/or whatever is on your mind."
+        subhead="Submissions open year round."
+      />
+      </br>
+      <Card 
+        title="For Earshrub Magazine (on Substack)"
+        body="Our editors would like read an essay, a visual essay or anything related to music, literature, technology, or culture. Consider ~6 pages as a maximum. Send submissions to editors@osmanthus.tv with a subject line the includes SHRUBBERY. In your email, include a brief bio, anything you'd like to plug, and/or whatever is on your mind."
+        subhead="Submissions open year round."
+      />
+      </br>
+      <Card
+      title="For Books"
+      body="Send us your poetry collections; Our editors are also interested in reading memoirs, travelogues. Chapbook length to full-length is accepted. Send submissions to editors@osmanthus.tv with a subject lines that reads BOOK."
+      subhead="Submissions open from June 21, 2024 to September 21, 2024."
+      />
+    </ul>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    background-color: #FFFFFF;
+    background-size: 224px;
+    color: #222222;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>
